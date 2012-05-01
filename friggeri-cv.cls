@@ -49,12 +49,12 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[]{Helvetica Neue LT Pro 55 Roman}
+\newfontfamily\thinfont[]{Helvetica Neue LT Pro 25 Ultra Light}
+\newfontfamily\headingfont[]{Helvetica Neue LT Pro 77 Bold Condensed}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Garamond Premier Pro}
 
 \setmathfont{XITS Math}
 
@@ -91,22 +91,6 @@
 % Structure %
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
-
-\newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
-  {%
-    \color{%
-      \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\else%
-        headercolor\fi%
-    } #1#2#3%
-  }%
-  \stepcounter{colorCounter}%
-}
 
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
@@ -150,14 +134,15 @@
 % Side block %
 %%%%%%%%%%%%%%
 
+\renewcommand{\section}[1]{
+  \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} #1}
+}
+
 \RequirePackage[absolute,overlay]{textpos}
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
   \let\oldsection\section
-  \renewcommand{\section}[1]{
-    \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} #1}
-  }
   \begin{textblock}{3.6}(1.5, 4.33)
   \begin{flushright}
   \obeycr
