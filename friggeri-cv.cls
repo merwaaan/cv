@@ -54,7 +54,7 @@
 \newfontfamily\headingfont[]{Helvetica Neue LT Pro 77 Bold Condensed}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Garamond Premier Pro}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue LT Pro 45 Light}
 
 \setmathfont{XITS Math}
 
