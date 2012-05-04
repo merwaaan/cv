@@ -143,7 +143,7 @@
 \setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
   \let\oldsection\section
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{4.3}(0.6, 4.33)
   \begin{flushright}
   \obeycr
 }{%
