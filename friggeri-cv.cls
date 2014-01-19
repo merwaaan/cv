@@ -8,7 +8,6 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-
 %%%%%%%%%%
 % Colors %
 %%%%%%%%%%
@@ -49,14 +48,14 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue LT Pro 55 Roman}
-\newfontfamily\thinfont[]{Helvetica Neue LT Pro 25 Ultra Light}
-\newfontfamily\headingfont[]{Helvetica Neue LT Pro 77 Bold Condensed}
+\newfontfamily\bodyfont[]{Roboto-Black}
+\newfontfamily\thinfont[]{Roboto-Thin}
+\newfontfamily\headingfont[]{Roboto-Condensed}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue LT Pro 45 Light}
+\setmainfont[Mapping=tex-text, Color=textcolor]{Roboto-Light}
 
-\setmathfont{XITS Math}
+%\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -86,10 +85,10 @@
   \vspace{-2\parskip}
 }
 
-
 %%%%%%%%%%%%%
 % Structure %
 %%%%%%%%%%%%%
+
 \RequirePackage{parskip}
 
 \renewcommand{\section}[1]{
@@ -108,7 +107,6 @@
 }
 
 \pagestyle{empty}
-
 
 %%%%%%%%%%%%%%%%%%%%
 % List environment %
@@ -143,7 +141,7 @@
 \setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
   \let\oldsection\section
-  \begin{textblock}{4.3}(0.6, 4.33)
+  \begin{textblock}{4.7}(0.6, 4.33)
   \begin{flushright}
   \obeycr
 }{%
