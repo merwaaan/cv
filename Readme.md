@@ -1,7 +1,7 @@
 # About
 
-Latest version of my CV, forked from Adrien Friggeri's elegant
-template. I mainly changed the content (obviously) and made some
+My CV, forked from Adrien Friggeri's elegant
+template. The content has been changed (obviously) and I made some
 adjustment to the layout.
 
 # License
