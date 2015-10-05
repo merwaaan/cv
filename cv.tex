@@ -1,10 +1,7 @@
 \documentclass[]{friggeri-cv}
 
-\addbibresource{bibliography.bib}
-
-\usepackage{fancyhdr}
-
 % Add page numbering in the bottom-right corner.
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyfoot{}
 \fancyfoot[R]{\footnotesize \thepage\ / 2}
@@ -16,32 +13,31 @@
 \begin{document}
 
 \header{merwan}{achibet}
-       {PhD candidate}
+       {PhD candidate in Virtual Reality}
 
 % In the aside, each new line forces a line break
 \begin{aside}
-  \section{Contact}
-    ~
+  \section{about}\vspace{.25cm}
     129 avenue Aristide Briand
     35000 Rennes
     France
     ~
-    merwan.achibet@inria.fr
-    ~
+    \href{mailto:merwan.achibet@inria.fr}{merwan.achibet@inria.fr}
     +33 6 0330 5677
-  \section{Web}
-    ~
+		~
     \href{http://people.irisa.fr/Merwan.Achibet/}{people.irisa.fr/Merwan.Achibet}
     \href{http://github.com/merwaaan}{github.com/merwaaan}
-    ~
     {\color{lightergray}\rule{3cm}{0.01cm}}
-    ~
-    Born on 31/05/1989 (25)
+	\section{languages}\vspace{.25cm}
+		French {\footnotesize -- Native}\vspace{.4cm}
+		English {\footnotesize -- Proficient}
+		{\footnotesize (TOEIC 940/990)}\vspace{.4cm}
+		Japanese {\footnotesize -- Notions}
 \end{aside}
 
 \section{Interests}
 
-Virtual worlds, Simulation, Computer graphics, Game development, Dynamic web.
+Virtual worlds, Simulation, Game development, Computer graphics, Dynamic web.
 
 \section{Education}
 
@@ -50,7 +46,7 @@ Virtual worlds, Simulation, Computer graphics, Game development, Dynamic web.
     {2012–2015}
     {PhD candidate in Virtual Reality}
     {Inria Rennes, France}
-    {Multi-finger manipulation of virtual objects with haptic feedback}
+    {\it Multi-finger manipulation of virtual objects with haptic feedback}
   \entry
     {2010–2012}
     {Master of Science, with honors}
@@ -65,7 +61,23 @@ Virtual worlds, Simulation, Computer graphics, Game development, Dynamic web.
 
 \section{Skills}
 
-Virtual reality, computer graphics (OpenGL), Object-oriented programming (C++, C\#, Python, Java), game engines (Unity3D, Ogre), dynamic web (JavaScript, HTML5).
+\begin{entrylist}
+	\entry
+		{Programming}
+		{C\#, C++, Python, Java}
+		{}
+		{}
+	\entry
+		{Web \& mobile}
+		{Javascript, CoffeeScript, HTML5, Android SDK}
+		{}
+		{}
+	\entry
+		{Tools}
+		{Unity3D, Blender, Bullet, Qt Creator, Visual Studio, Node.js, Git}
+		{}
+		{}
+\end{entrylist}
 
 \section{Publications}
 
@@ -95,7 +107,6 @@ Virtual reality, computer graphics (OpenGL), Object-oriented programming (C++, C
     {Co-Evolution of the Road Network and the Land Use in a City}
     {Brussels, Belgium}
     {M. Achibet, S. Balev, A. Dutot, D. Olivier.\\ SOMC workshop within ECCS.}
-
 \end{entrylist}
 
 \newpage
@@ -106,12 +117,12 @@ Virtual reality, computer graphics (OpenGL), Object-oriented programming (C++, C
   \entry
     {2015}
     {INSA, Rennes \textemdash\ Engineering school}
-    {}
+    {Teaching assistant}
     {Introduction to algorithms \& object-oriented programming.}
   \entry
     {2014}
     {INSA, Rennes \textemdash\ Engineering school}
-    {Teaching aid}
+    {Teaching assistant}
     {Physics simulation for medical applications.}
   \entry
     {2010–2011}
@@ -120,7 +131,7 @@ Virtual reality, computer graphics (OpenGL), Object-oriented programming (C++, C
     {The C programming language.}
 \end{entrylist}
 
-\section{Selected experience}
+\section{Experience}
 
 \begin{entrylist}
   \entry
@@ -150,31 +161,16 @@ Virtual reality, computer graphics (OpenGL), Object-oriented programming (C++, C
     {Computer maintenance and troubleshooting}
 \end{entrylist}
 
-\section{Languages}
-
-\begin{entrylist}
-  \entry
-    {}
-    {French}
-    {}
-		{Mother tongue}
-  \entry
-    {}
-    {English}
-    {}
-    {Fluent (TOEIC 940/990)}
-  \entry
-    {}
-    {Japanese}
-    {}
-    {Beginner}
-\end{entrylist}
-
-\section{Personal projects}
+\section{Selected side projects}
 
 \begin{entrylist}
   \entry
     {2015}
+    {You are the münster}
+    {\href{http://github.com/fmdkdd/yatm}{github.com/fmdkdd/yatm}}
+    {A platform game made in 72 hours for the Ludum Dare jam as a team of two.}
+  \entry
+    {}
     {Cheapo.js}
     {\href{http://github.com/merwaaan/cheapo.js}{github.com/merwaaan/cheapo.js}}
     {A CHIP-8 and Super CHIP-8 interpreter written in CoffeeScript.}
@@ -187,8 +183,7 @@ Virtual reality, computer graphics (OpenGL), Object-oriented programming (C++, C
     {2013}
     {Sparkets}
     {\href{http://github.com/fmdkdd/sparkets}{github.com/fmdkdd/sparkets}}
-    {A multiplayer space game making use of NodeJS and websockets.}
-
+    {A multiplayer space dogfighting game in the browser.}
 \end{entrylist}
 
 \end{document}
